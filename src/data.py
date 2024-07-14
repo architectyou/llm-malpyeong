@@ -96,3 +96,28 @@ class DataCollatorForSupervisedDataset(object):
             labels=labels,
             attention_mask=input_ids.ne(self.tokenizer.pad_token_id),
         )
+    
+
+class KoreanDataset:
+    def __init__(self, args, tokenizer):
+        # Set the current directory to the script's directory
+        train_file, valid_file = self._get_path()
+        train_dataset = CustomDataset(train_file, tokenizer)
+        valid_dataset = CustomDataset(valid_file, tokenizer)
+
+        self.train_dataset = Dataset.from_dict({
+            'input_ids': train_dataset.inp,
+            'labels': train_dataset.label,
+        })
+        self.valid_dataset = Dataset.from_dict({
+            'input_ids': valid_dataset.inp,
+            'labels': valid_dataset.label,
+        })
+        self.data_collator = DataCollatorForSupervisedDataset(tokenizer=tokenizer)
+
+
+    def _get_path(self):
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        train_file  = os.path.join(current_dir, '../resource/data/대화맥락추론_train.json')
+        valid_file  = os.path.join(current_dir, '../resource/data/대화맥락추론_dev.json')
+        return train_file, valid_file
