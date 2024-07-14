@@ -2,7 +2,7 @@
 이 레포지토리는 아래 세 분의 기여를 통해 완성되어가고 있습니다.
 - Hyeongcheol Geum (oppenheimer1223@outlook.com)
 - SeungAh Son (gongsoonyee@gmail.com)
-- Donghun Choi(ln996975@gmail.com)
+- Donghun Choi (ln996975@gmail.com)
 
 ## To do list
 - [ ] 현 베이스 학습/튜닝/추론 코드에서 정량적 evaluation 코드 추가
