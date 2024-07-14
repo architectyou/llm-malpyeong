@@ -12,17 +12,16 @@
 
 ## Repository Structure
 ```
-├── test.py               # 테스트 스크립트
-└── train.py              # 학습 스크립트
-
 resource/                 # 학습에 필요한 리소스들을 보관하는 디렉토리
 └── data.py/              # 데이터 파일들이 저장되는 폴더
-
 src/                      # 학습에 사용될 커스텀 함수들을 보관하는 디렉토리
 └── module.py             # 소스 파일들에 필요한 모듈
 ├── data.py               # 커스텀 데이터셋 클래스
 ├── model.py              # 커스텀 데이터셋 클래스
 └── utils.py              # 유틸리티 함수들
+
+test.py                   # 테스트 스크립트
+train.py                  # 학습 스크립트
 ```
 
 ## Dataset Structure
@@ -69,6 +68,6 @@ bash base_inference.sh
 추가 예정
 
 ## Reference
-- huggingface/transformers (https://github.com/huggingface/transformers)  
-- Bllossome (Teddysum) (https://huggingface.co/MLP-KTLim/llama-3-Korean-Bllossom-8B)  
 - 국립국어원 인공지능 (AI)말평 (https://kli.korean.go.kr/benchmark)  
+- 국립국어원 대화맥락추론 가형 베이스 코드 (https://github.com/teddysum/Korean_CCI_2024)
+- Bllossome (Teddysum) (https://huggingface.co/MLP-KTLim/llama-3-Korean-Bllossom-8B)  
