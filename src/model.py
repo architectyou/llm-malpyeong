@@ -25,5 +25,6 @@ class ModelZoo:
             args.model_id,
             torch_dtype=torch.bfloat16,
             device_map="auto",
+            quantization_config = BitsAndBytesConfig(load_in_8bit=True),
         )
         return model

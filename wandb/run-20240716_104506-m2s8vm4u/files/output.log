@@ -1,0 +1,101 @@
+  0%|                                                                      | 0/5 [00:00<?, ?it/s]/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/sypark/llm_tuning/LLM-Korean-CCI-2024/train.py", line 35, in <module>
+    main(args)
+  File "/home/sypark/llm_tuning/LLM-Korean-CCI-2024/train.py", line 30, in main
+    trainer.run()
+  File "/home/sypark/llm_tuning/LLM-Korean-CCI-2024/src/utils.py", line 76, in run
+    self.__trainer.train()
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/trl/trainer/sft_trainer.py", line 451, in train
+    output = super().train(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/transformers/trainer.py", line 1859, in train
+    return inner_training_loop(
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/transformers/trainer.py", line 2203, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/transformers/trainer.py", line 3138, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/transformers/trainer.py", line 3161, in compute_loss
+    outputs = model(**inputs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/accelerate/utils/operations.py", line 819, in forward
+    return model_forward(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/accelerate/utils/operations.py", line 807, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/peft/peft_model.py", line 1430, in forward
+    return self.base_model(
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 179, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/accelerate/hooks.py", line 169, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1208, in forward
+    outputs = self.model(
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/accelerate/hooks.py", line 169, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1007, in forward
+    layer_outputs = self._gradient_checkpointing_func(
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/_compile.py", line 24, in inner
+    return torch._dynamo.disable(fn, recursive)(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 451, in _fn
+    return fn(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/_dynamo/external_utils.py", line 36, in inner
+    return fn(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 494, in checkpoint
+    ret = function(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/accelerate/hooks.py", line 169, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 741, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/accelerate/hooks.py", line 169, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 636, in forward
+    query_states = self.q_proj(hidden_states)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/peft/tuners/lora/bnb.py", line 217, in forward
+    result = self.base_layer(x, *args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/accelerate/hooks.py", line 169, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/bitsandbytes/nn/modules.py", line 441, in forward
+    out = bnb.matmul(x, self.weight, bias=self.bias, state=self.state)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py", line 563, in matmul
+    return MatMul8bitLt.apply(A, B, out, bias, state)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/torch/autograd/function.py", line 598, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py", line 401, in forward
+    out32, Sout32 = F.igemmlt(C32A, state.CxB, SA, state.SB)
+  File "/home/sypark/llm_tuning/llm/lib/python3.10/site-packages/bitsandbytes/functional.py", line 1792, in igemmlt
+    raise Exception('cublasLt ran into an error!')
+Exception: cublasLt ran into an error!
+A: torch.Size([464, 4096]), B: torch.Size([4096, 4096]), C: (464, 4096); (lda, ldb, ldc): (c_int(14848), c_int(131072), c_int(14848)); (m, n, k): (c_int(464), c_int(4096), c_int(4096))

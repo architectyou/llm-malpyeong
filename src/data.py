@@ -8,7 +8,8 @@ class CustomDataset(Dataset):
         self.trg = []
         self.label = []
 
-        PROMPT = '''You are a helpful AI assistant. Please answer the user's questions kindly. 당신은 유능한 AI 어시스턴트 입니다. 사용자의 질문에 대해 친절하게 답변해주세요.'''
+        PROMPT = '''You are a helpful AI assistant. Please answer the user's questions kindly. 
+                    당신은 유능한 AI 어시스턴트 입니다. 사용자의 질문에 대해 친절하게 답변해주세요.'''
         answer_dict = {
             "": None,
             "inference_1": 0,
