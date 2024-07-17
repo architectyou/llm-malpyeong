@@ -50,7 +50,7 @@ class Trainer:
             warmup_steps=self.__args.warmup_steps,
             logging_steps=1,
             save_strategy="epoch",
-            save_total_limit=5,
+            save_total_limit=10,
             bf16=True,
             gradient_checkpointing=True,
             gradient_checkpointing_kwargs={"use_reentrant": False},

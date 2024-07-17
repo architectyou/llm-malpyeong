@@ -1,0 +1,44 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++ BUG REPORT INFORMATION ++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++ /usr/local CUDA PATHS +++++++++++++++++++
+/usr/local/cuda-11.8/targets/x86_64-linux/lib/libcudart.so
+/usr/local/cuda-11.8/targets/x86_64-linux/lib/stubs/libcuda.so
+/usr/local/cuda-11.8/nsight-compute-2022.3.0/target/linux-desktop-glibc_2_11_3-x64/libcuda-injection.so
+/usr/local/cuda-11.8/nsight-compute-2022.3.0/target/linux-desktop-t210-a64/libcuda-injection.so
+/usr/local/cuda-11.8/nsight-compute-2022.3.0/target/linux-desktop-glibc_2_19_0-ppc64le/libcuda-injection.so
+/usr/local/cuda-11.5/targets/x86_64-linux/lib/libcudart.so
+/usr/local/cuda-11.5/targets/x86_64-linux/lib/stubs/libcuda.so
+/usr/local/cuda-11.5/nsight-compute-2021.3.1/target/linux-desktop-glibc_2_11_3-x64/libcuda-injection.so
+/usr/local/cuda-11.5/nsight-compute-2021.3.1/target/linux-desktop-t210-a64/libcuda-injection.so
+/usr/local/cuda-11.5/nsight-compute-2021.3.1/target/linux-desktop-glibc_2_19_0-ppc64le/libcuda-injection.so
+/usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudart.so
+/usr/local/cuda-12.2/targets/x86_64-linux/lib/stubs/libcuda.so
+/usr/local/cuda-12.2/nsight-compute-2023.2.2/target/linux-desktop-t210-a64/libcuda-injection.so
+/usr/local/cuda-12.2/nsight-compute-2023.2.2/target/linux-desktop-glibc_2_11_3-x64/libcuda-injection.so
+/usr/local/cuda-12.2/nsight-compute-2023.2.2/target/linux-desktop-glibc_2_19_0-ppc64le/libcuda-injection.so
+
++++++++++++++++ WORKING DIRECTORY CUDA PATHS +++++++++++++++
+
+
+++++++++++++++++++ LD_LIBRARY CUDA PATHS +++++++++++++++++++
+++++++++++ /usr/local/cuda-11.8/lib64 CUDA PATHS +++++++++++
+
+
+++++++++++++++++++++++++++ OTHER +++++++++++++++++++++++++++
+COMPILED_WITH_CUDA = True
+COMPUTE_CAPABILITIES_PER_GPU = ['9.0']
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++ DEBUG INFO END ++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Running a quick check that:
+    + library is importable
+    + CUDA function is callable
+
+
+WARNING: Please be sure to sanitize sensible info from any such env vars!
+
+SUCCESS!
+Installation was successful!

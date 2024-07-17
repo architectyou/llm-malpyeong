@@ -21,10 +21,17 @@ class ModelZoo:
         return tokenizer
     
     def _get_model(self, args):
+        # 4-bit quantizing
+        quantization_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_compute_dtype=torch.bfloat16
+        )
+        
         model = AutoModelForCausalLM.from_pretrained(
             args.model_id,
             torch_dtype=torch.bfloat16,
+            # quantization_config=quantization_config,
             device_map="auto",
-            quantization_config = BitsAndBytesConfig(load_in_8bit=True),
+            # quantization_config = BitsAndBytesConfig(load_in_8bit=True), #H00 8bit 양자화 오류로 사용하지 않음.
         )
         return model

@@ -2,6 +2,8 @@
 __pycache__
 resource/__pycache__
 src/__pycache__
+/wandb
+resource/results/
 
 # Ignore all .DS_Store files
 .DS_Store
