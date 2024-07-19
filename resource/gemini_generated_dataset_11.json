@@ -1,0 +1,1017 @@
+[
+    {
+        "id": "nikluge-2024-대화 맥락 추론-train-000001",
+        "input": {
+            "conversation": [
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 오늘 날씨 진짜 좋다! 햇살도 따스하고 바람도 살랑살랑 불고~",
+                    "utterance_id": "MDRW2100003410.1.1"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 맞아! 밖에 나가서 뭘 좀 하고 싶은데, 딱히 뭐 할지 모르겠네.",
+                    "utterance_id": "MDRW2100003410.1.2"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 그러네. 뭐 할까? 영화 볼까?",
+                    "utterance_id": "MDRW2100003410.1.3"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 영화는 좀 그렇고… 쇼핑은 어때?",
+                    "utterance_id": "MDRW2100003410.1.4"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 쇼핑! 좋아! 어디 갈까?",
+                    "utterance_id": "MDRW2100003410.1.5"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 백화점 갈까? 아니면 옷 가게 좀 돌아다닐까?",
+                    "utterance_id": "MDRW2100003410.1.6"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 백화점은 좀 멀고, 옷 가게는 괜찮은데 뭘 사야 할지 모르겠어.",
+                    "utterance_id": "MDRW2100003410.1.7"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 그럼 카페 가서 커피 마시면서 쇼핑할 곳 정할까?",
+                    "utterance_id": "MDRW2100003410.1.8"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 좋아! 어디 카페 갈까?",
+                    "utterance_id": "MDRW2100003410.1.9"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 요즘 핫한 카페 있잖아. 거기 갈까?",
+                    "utterance_id": "MDRW2100003410.1.10"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 어디? 거기 사람 많지 않아?",
+                    "utterance_id": "MDRW2100003410.1.11"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 좀 있긴 한데, 분위기가 좋아서 한번 가보고 싶었어.",
+                    "utterance_id": "MDRW2100003410.1.12"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 그럼 가보자!",
+                    "utterance_id": "MDRW2100003410.1.13"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 좋아! 커피 마시면서 쇼핑 계획 세우자.",
+                    "utterance_id": "MDRW2100003410.1.14"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 응! 빨리 가고 싶다!",
+                    "utterance_id": "MDRW2100003410.1.15"
+                }
+            ],
+            "reference_id": [
+                "MDRW2100003410.1.11"
+            ],
+            "category": "후행 사건(subsequent event)",
+            "inference_1": "화자1과 화자2는 카페에 가서 커피를 마시고 쇼핑 계획을 세울 것이다.",
+            "inference_2": "화자1과 화자2는 카페에 가서 커피를 마시고 쇼핑을 할 것이다.",
+            "inference_3": "화자1과 화자2는 카페에 가서 커피를 마시고 영화를 볼 것이다. \n"
+        },
+        "output": "inference_1",
+        "output_answer": " '대화 말미에 화자1과 화자2는 \"커피 마시면서 쇼핑 계획 세우자\"라고 합의하며 카페에 가서 커피를 마시고 쇼핑 계획을 세우는 것으로 결론 내렸기 때문입니다.' \n"
+    },
+    {
+        "id": "nikluge-2024-대화 맥락 추론-train-000002",
+        "input": {
+            "conversation": [
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 오늘 날씨 진짜 덥다. 땀 엄청 난다.",
+                    "utterance_id": "MDRW2100003410.1.1"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 그치, 벌써부터 이렇게 더운데, 여름엔 어떻게 버티지?",
+                    "utterance_id": "MDRW2100003410.1.2"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 에어컨 없이는 살아남기 힘들 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.3"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 나도 에어컨 없으면 녹아내릴 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.4"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 그나저나, 너 오늘 저녁 뭐 먹을 거야?",
+                    "utterance_id": "MDRW2100003410.1.5"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 아직 정하지 못했는데, 뭘 먹을지 고민이네.",
+                    "utterance_id": "MDRW2100003410.1.6"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 나도. 뭘 먹을지 고민이야.",
+                    "utterance_id": "MDRW2100003410.1.7"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 혹시 맛집 뭐 없어?",
+                    "utterance_id": "MDRW2100003410.1.8"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 맛집? 음… 최근에 새로 생긴 닭갈비집이 괜찮다고 하던데.",
+                    "utterance_id": "MDRW2100003410.1.9"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 닭갈비? 좋아! 나 닭갈비 좋아하는데.",
+                    "utterance_id": "MDRW2100003410.1.10"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 그럼 거기 가볼까?",
+                    "utterance_id": "MDRW2100003410.1.11"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 좋아! 근데 몇 시쯤에 갈 수 있어?",
+                    "utterance_id": "MDRW2100003410.1.12"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 7시쯤에는 갈 수 있을 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.13"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 오케이! 그럼 7시에 그 닭갈비집에서 만나자.",
+                    "utterance_id": "MDRW2100003410.1.14"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 좋아! 7시에 만나!",
+                    "utterance_id": "MDRW2100003410.1.15"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 빨리 퇴근하고 싶다.",
+                    "utterance_id": "MDRW2100003410.1.16"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 나도! 빨리 퇴근해서 맛있는 닭갈비 먹고 싶다.",
+                    "utterance_id": "MDRW2100003410.1.17"
+                }
+            ],
+            "reference_id": [
+                "MDRW2100003410.1.11"
+            ],
+            "category": "내적 동기(motivation)",
+            "inference_1": "화자1이 퇴근하고 싶어하는 것은 화자1이 맛있는 닭갈비를 먹고 싶기 때문이다.",
+            "inference_2": "화자1이 퇴근하고 싶어하는 것은 화자1이 지금 일하는 것이 힘들기 때문이다.",
+            "inference_3": "화자1이 퇴근하고 싶어하는 것은 화자1이 닭갈비집에서 화자2를 만나기로 했기 때문이다. \n"
+        },
+        "output": "inference_1",
+        "output_answer": " '화자1은 닭갈비를 먹고 싶다고 말하며 \"빨리 퇴근해서 맛있는 닭갈비 먹고 싶다.\"라고 말합니다. 즉"
+    },
+    {
+        "id": "nikluge-2024-대화 맥락 추론-train-000003",
+        "input": {
+            "conversation": [
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 오늘 날씨 진짜 좋다! 햇살도 따스하고 바람도 살랑살랑 부는 게 딱 봄 날씨네.",
+                    "utterance_id": "MDRW2100003410.1.1"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 맞아. 겨우내 움츠렸던 몸이 풀리는 기분이야.",
+                    "utterance_id": "MDRW2100003410.1.2"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 주말에는 뭐 할 거야?",
+                    "utterance_id": "MDRW2100003410.1.3"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 아직 계획은 없는데, 뭘 할까 고민 중이야. 너는?",
+                    "utterance_id": "MDRW2100003410.1.4"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 나도 아직 계획은 없는데, 괜찮은 데 있으면 추천해줘!",
+                    "utterance_id": "MDRW2100003410.1.5"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 음… 요즘 날씨 좋은데, 돗자리 펴놓고 피크닉 가는 건 어때?",
+                    "utterance_id": "MDRW2100003410.1.6"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 피크닉? 좋아! 어디가 좋을까?",
+                    "utterance_id": "MDRW2100003410.1.7"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 한강공원 가는 건 어때?",
+                    "utterance_id": "MDRW2100003410.1.8"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 한강공원 좋네! 거기 가서 돗자리 펴놓고 도시락 먹으면 딱일 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.9"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 그래! 도시락은 내가 싸 갈게!",
+                    "utterance_id": "MDRW2100003410.1.10"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 헐 대박! 너무 고마워!",
+                    "utterance_id": "MDRW2100003410.1.11"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 괜찮아. 맛있는 거 많이 싸갈게!",
+                    "utterance_id": "MDRW2100003410.1.12"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 빨리 주말이 왔으면 좋겠다!",
+                    "utterance_id": "MDRW2100003410.1.13"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 맞아! 벌써부터 기대된다.",
+                    "utterance_id": "MDRW2100003410.1.14"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 그럼 주말에 한강공원에서 만나!",
+                    "utterance_id": "MDRW2100003410.1.15"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 응! 주말에 만나!",
+                    "utterance_id": "MDRW2100003410.1.16"
+                }
+            ],
+            "reference_id": [
+                "MDRW2100003410.1.11"
+            ],
+            "category": "후행 사건(subsequent event)",
+            "inference_1": "speaker2는 speaker1에게 도시락을 싸주기 위해 마트에 가서 도시락 재료를 사야 한다.",
+            "inference_2": "speaker1과 speaker2는 한강공원에서 피크닉을 하기 위해 돗자리와 담요를 챙겨야 한다.",
+            "inference_3": "speaker1은 주말에 한강공원에서 피크닉을 하기 위해 친구들에게 연락을 해야 한다. \n"
+        },
+        "output": "inference_1",
+        "output_answer": " 'speaker2가 \"도시락은 내가 싸 갈게!\"라고 말했기 때문에 speaker2는 speaker1에게 도시락을 싸주기 위해 마트에 가서 도시락 재료를 사야 한다.' \n"
+    },
+    {
+        "id": "nikluge-2024-대화 맥락 추론-train-000004",
+        "input": {
+            "conversation": [
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 오늘 날씨 진짜 좋네. 햇살도 따뜻하고, 바람도 살랑살랑 불고.",
+                    "utterance_id": "MDRW2100003410.1.1"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 맞아. 봄이 온 게 실감나. 겨울 동안 꽁꽁 싸매고 있었는데, 이제 옷도 얇게 입고 다닐 수 있겠다.",
+                    "utterance_id": "MDRW2100003410.1.2"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 그러게. 봄옷 꺼내 입고 싶은데, 아직 좀 쌀쌀하긴 하네.",
+                    "utterance_id": "MDRW2100003410.1.3"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 옷장 정리해야 하는데, 아직 겨울옷 넣기가 아깝더라.",
+                    "utterance_id": "MDRW2100003410.1.4"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 나도! 봄옷 입고 나들이 가고 싶은데, 날씨가 좀 더 따뜻해졌으면 좋겠다.",
+                    "utterance_id": "MDRW2100003410.1.5"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 나도 나들이 가고 싶어! 벚꽃도 피고, 날씨도 좋고, 딱 나들이 가기 좋은 계절인데.",
+                    "utterance_id": "MDRW2100003410.1.6"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 벚꽃 보러 가자! 다음 주 주말에 시간 되면 벚꽃 보러 가는 거 어때?",
+                    "utterance_id": "MDRW2100003410.1.7"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 좋아! 다음 주 주말에 벚꽃 보러 가자! 어디로 갈까?",
+                    "utterance_id": "MDRW2100003410.1.8"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 석촌호수나 여의도 한강공원 어때?",
+                    "utterance_id": "MDRW2100003410.1.9"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 둘 다 좋네. 근데 석촌호수는 사람 너무 많을 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.10"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 그렇네. 그럼 여의도 한강공원으로 가자!",
+                    "utterance_id": "MDRW2100003410.1.11"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 좋아! 여의도 한강공원에서 벚꽃 구경하고, 돗자리 깔고 도시락도 먹자.",
+                    "utterance_id": "MDRW2100003410.1.12"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 딱 좋네! 돗자리랑 도시락 챙겨서 여의도 한강공원으로 가자.",
+                    "utterance_id": "MDRW2100003410.1.13"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 좋아! 다음 주 주말이 기대된다!",
+                    "utterance_id": "MDRW2100003410.1.14"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 나도! 벌써부터 설레네.",
+                    "utterance_id": "MDRW2100003410.1.15"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 그럼 다음 주 주말에 만나!",
+                    "utterance_id": "MDRW2100003410.1.16"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 응! 다음 주 주말에 만나!",
+                    "utterance_id": "MDRW2100003410.1.17"
+                }
+            ],
+            "reference_id": [
+                "MDRW2100003410.1.11"
+            ],
+            "category": "후행 사건(subsequent event)",
+            "inference_1": "화자1과 화자2는 다음 주 주말에 벚꽃 구경을 갈 것이다.",
+            "inference_2": "화자1과 화자2는 벚꽃 구경을 간 후 저녁 식사를 할 것이다.",
+            "inference_3": "화자1과 화자2는 벚꽃 구경 후 카페에 갈 것이다. \n"
+        },
+        "output": "inference_1",
+        "output_answer": " '화자1과 화자2는 벚꽃 구경을 갈 장소를 정하고"
+    },
+    {
+        "id": "nikluge-2024-대화 맥락 추론-train-000005",
+        "input": {
+            "conversation": [
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 오늘 날씨 진짜 좋다! 햇살도 따스하고 바람도 살랑살랑 불고.",
+                    "utterance_id": "MDRW2100003410.1.1"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 그치! 완전 봄날씨네.",
+                    "utterance_id": "MDRW2100003410.1.2"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 봄이라 그런가, 괜히 설레는 기분이야.",
+                    "utterance_id": "MDRW2100003410.1.3"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 나도! 봄이 되니까 뭔가 새로운 걸 하고 싶은 마음이 드는 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.4"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 뭘 하고 싶은데?",
+                    "utterance_id": "MDRW2100003410.1.5"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 음… 뭐가 좋을까? 봄맞이 여행도 좋고, 새로운 취미도 시작해 보고 싶고…",
+                    "utterance_id": "MDRW2100003410.1.6"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 여행은 어디로 가고 싶어?",
+                    "utterance_id": "MDRW2100003410.1.7"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 아직 정하지는 못했는데, 따뜻한 나라로 떠나고 싶어.",
+                    "utterance_id": "MDRW2100003410.1.8"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 따뜻한 나라? 좋아! 나도 따뜻한 나라 가고 싶다!",
+                    "utterance_id": "MDRW2100003410.1.9"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 그럼 같이 여행 갈까?",
+                    "utterance_id": "MDRW2100003410.1.10"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 진짜?",
+                    "utterance_id": "MDRW2100003410.1.11"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 응! 같이 가면 더 재밌을 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.12"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 좋아! 그럼 어디로 갈지부터 정해보자!",
+                    "utterance_id": "MDRW2100003410.1.13"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 어디가 좋을까?",
+                    "utterance_id": "MDRW2100003410.1.14"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 괌은 어때?",
+                    "utterance_id": "MDRW2100003410.1.15"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 괌도 좋긴 한데, 좀 더 색다른 곳으로 가고 싶어.",
+                    "utterance_id": "MDRW2100003410.1.16"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 그럼 코타키나발루는?",
+                    "utterance_id": "MDRW2100003410.1.17"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 코타키나발루? 괜찮네! 거기는 어때?",
+                    "utterance_id": "MDRW2100003410.1.18"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 거기는 자연도 좋고, 액티비티도 많다고 해서 좋을 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.19"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 그래! 그럼 코타키나발루로 결정!",
+                    "utterance_id": "MDRW2100003410.1.20"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 오케이! 그럼 이제부터 여행 계획 세우자!",
+                    "utterance_id": "MDRW2100003410.1.21"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 좋아! 벌써부터 설레네!",
+                    "utterance_id": "MDRW2100003410.1.22"
+                }
+            ],
+            "reference_id": [
+                "MDRW2100003410.1.11"
+            ],
+            "category": "후행 사건(subsequent event)",
+            "inference_1": "화자1과 화자2는 여행을 위해 짐을 싸야 한다.",
+            "inference_2": "화자1과 화자2는 여행 계획을 세우기 위해 인터넷을 검색할 것이다.",
+            "inference_3": "화자1과 화자2는 코타키나발루에서 액티비티를 즐길 것이다. \n"
+        },
+        "output": "inference_3",
+        "output_answer": " '화자1과 화자2는 코타키나발루에서 액티비티를 많이 즐기고 싶어하며"
+    },
+    {
+        "id": "nikluge-2024-대화 맥락 추론-train-000006",
+        "input": {
+            "conversation": [
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 오늘 날씨 진짜 좋네! 햇살도 따스하고, 바람도 살랑살랑 불고.",
+                    "utterance_id": "MDRW2100003410.1.1"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 응, 완전 봄 날씨네. 덕분에 기분도 좋아졌어.",
+                    "utterance_id": "MDRW2100003410.1.2"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 나도! 봄이 오니까 뭔가 설레는 기분이야.",
+                    "utterance_id": "MDRW2100003410.1.3"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 나도! 봄에는 뭔가 새로운 걸 시작하고 싶은 욕구가 생기는 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.4"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 맞아. 혹시 봄맞이 계획 같은 거 있어?",
+                    "utterance_id": "MDRW2100003410.1.5"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 음… 딱히 계획은 없는데, 봄옷 사러 가고 싶어.",
+                    "utterance_id": "MDRW2100003410.1.6"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 나도! 옷장에 봄옷이 부족한 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.7"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 그럼 같이 쇼핑 가자!",
+                    "utterance_id": "MDRW2100003410.1.8"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 좋아! 언제 갈까?",
+                    "utterance_id": "MDRW2100003410.1.9"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 이번 주말에 시간 되?",
+                    "utterance_id": "MDRW2100003410.1.10"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 이번 주말은 좀 바빠. 다음 주말에는 가능해.",
+                    "utterance_id": "MDRW2100003410.1.11"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 다음 주말도 괜찮아! 그럼 다음 주말에 쇼핑 가자!",
+                    "utterance_id": "MDRW2100003410.1.12"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 좋아! 그럼 다음 주말에 만나서 쇼핑하자!",
+                    "utterance_id": "MDRW2100003410.1.13"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 응! 그때 봐!",
+                    "utterance_id": "MDRW2100003410.1.14"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 쇼핑하면서 맛있는 것도 먹자!",
+                    "utterance_id": "MDRW2100003410.1.15"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 그래! 맛있는 것도 먹고 즐거운 쇼핑 해야지!",
+                    "utterance_id": "MDRW2100003410.1.16"
+                }
+            ],
+            "reference_id": [
+                "MDRW2100003410.1.11"
+            ],
+            "category": "후행 사건(subsequent event)",
+            "inference_1": "화자1과 화자2는 쇼핑을 통해 봄옷을 구매하게 될 것이다.",
+            "inference_2": "화자1과 화자2는 쇼핑을 통해 친목을 다질 것이다.",
+            "inference_3": "화자1과 화자2는 쇼핑 후 맛있는 저녁 식사를 하게 될 것이다. \n"
+        },
+        "output": "inference_1",
+        "output_answer": " '화자1과 화자2는 봄옷을 사러 가고 싶어하며"
+    },
+    {
+        "id": "nikluge-2024-대화 맥락 추론-train-000007",
+        "input": {
+            "conversation": [
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 오늘 날씨 진짜 좋네! 햇살도 따스하고, 바람도 살랑살랑 불고.",
+                    "utterance_id": "MDRW2100003410.1.1"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 맞아, 완전 봄 날씨야. 밖에 나가서 봄맞이해야 할 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.2"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 그러게. 뭐 할까?",
+                    "utterance_id": "MDRW2100003410.1.3"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 뭐, 봄이니까 꽃놀이 가는 게 어때?",
+                    "utterance_id": "MDRW2100003410.1.4"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 꽃놀이! 좋아! 어디로 갈까?",
+                    "utterance_id": "MDRW2100003410.1.5"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 벚꽃 축제 하는 곳 많던데. 어디가 좋을까?",
+                    "utterance_id": "MDRW2100003410.1.6"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 흠… 난 좀 한적한 곳이 좋긴 한데. 사람 너무 많으면 힘들 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.7"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 그럼 좀 덜 유명한 곳으로 가는 건 어때?",
+                    "utterance_id": "MDRW2100003410.1.8"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 좋아! 혹시 아는 곳 있어?",
+                    "utterance_id": "MDRW2100003410.1.9"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 음… 인터넷에서 찾아보니까, '○○공원'이라는 곳이 괜찮다고 하더라.",
+                    "utterance_id": "MDRW2100003410.1.10"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: '○○공원'? 거기 벚꽃 많다는 소문 들었어!",
+                    "utterance_id": "MDRW2100003410.1.11"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 그래? 거기 가볼까?",
+                    "utterance_id": "MDRW2100003410.1.12"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 응! 거기 가서 돗자리 펴놓고 도시락 먹으면서 봄 햇살 쬘 생각하니까 벌써부터 좋네.",
+                    "utterance_id": "MDRW2100003410.1.13"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 나도! 돗자리랑 도시락 챙겨가자.",
+                    "utterance_id": "MDRW2100003410.1.14"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 좋아! 그럼 내일 '○○공원'에서 만나!",
+                    "utterance_id": "MDRW2100003410.1.15"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 오케이! 내일 봐!",
+                    "utterance_id": "MDRW2100003410.1.16"
+                }
+            ],
+            "reference_id": [
+                "MDRW2100003410.1.11"
+            ],
+            "category": "후행 사건(subsequent event)",
+            "inference_1": "화자1과 화자2는 '○○공원'에서 벚꽃을 구경할 것이다.",
+            "inference_2": "화자1과 화자2는 '○○공원'에서 돗자리를 펴고 도시락을 먹을 것이다.",
+            "inference_3": "화자1은 '○○공원'에서 봄 햇살을 쬘 것이다. \n"
+        },
+        "output": "inference_1",
+        "output_answer": " '화자1과 화자2는 벚꽃 축제를 하기 위해 \"○○공원\"을 가기로 결정했고"
+    },
+    {
+        "id": "nikluge-2024-대화 맥락 추론-train-000008",
+        "input": {
+            "conversation": [
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 오늘 날씨 진짜 좋다! 햇살도 따뜻하고 바람도 살랑살랑 불고~",
+                    "utterance_id": "MDRW2100003410.1.1"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 그치! 완전 봄 날씨야. 겨울잠 자던 곰도 깨어날 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.2"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: ㅋㅋㅋ 곰은 좀 오바 아냐?",
+                    "utterance_id": "MDRW2100003410.1.3"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 아니야, 진짜! 봄이 오니까 뭔가 기분도 좋아지고, 활동적이고 싶어지는 거 있지?",
+                    "utterance_id": "MDRW2100003410.1.4"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 나도! 겨울 동안 움츠러들었던 몸 좀 풀어줘야 할 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.5"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 그럼 오늘 저녁에 같이 운동 갈까?",
+                    "utterance_id": "MDRW2100003410.1.6"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 운동? 좋아! 어디 갈까?",
+                    "utterance_id": "MDRW2100003410.1.7"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 요즘 핫하다는 필라테스 어때?",
+                    "utterance_id": "MDRW2100003410.1.8"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 필라테스? 나 한 번도 안 해봤는데.",
+                    "utterance_id": "MDRW2100003410.1.9"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 나도 처음이야! 같이 시작해보자!",
+                    "utterance_id": "MDRW2100003410.1.10"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 좋아! 그럼 오늘 저녁 7시에 만나서 같이 가자!",
+                    "utterance_id": "MDRW2100003410.1.11"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 오케이! 그럼 7시에 만나!",
+                    "utterance_id": "MDRW2100003410.1.12"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 응! 그럼 난 이제 일해야겠다.",
+                    "utterance_id": "MDRW2100003410.1.13"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 힘내!",
+                    "utterance_id": "MDRW2100003410.1.14"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 너도!",
+                    "utterance_id": "MDRW2100003410.1.15"
+                }
+            ],
+            "reference_id": [
+                "MDRW2100003410.1.11"
+            ],
+            "category": "후행 사건(subsequent event)",
+            "inference_1": "화자1과 화자2는 저녁 7시에 필라테스 학원에서 만날 것이다.",
+            "inference_2": "화자1과 화자2는 필라테스를 하고 나서 저녁 식사를 할 것이다.",
+            "inference_3": "화자1과 화자2는 필라테스를 하면서 서로의 근황을 나눌 것이다. \n"
+        },
+        "output": "inference_1",
+        "output_answer": " '화자1과 화자2가 저녁 7시에 필라테스 학원에서 만나기로 약속했기 때문입니다.' \n"
+    },
+    {
+        "id": "nikluge-2024-대화 맥락 추론-train-000009",
+        "input": {
+            "conversation": [
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1:  오늘 날씨 진짜 좋다!  햇살도 따스하고 바람도 살랑살랑 부는 게 딱 봄 날씨네.",
+                    "utterance_id": "MDRW2100003410.1.1"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2:  맞아!  어제 비가 와서 그런지 하늘도 맑고 공기도 깨끗한 느낌이야.",
+                    "utterance_id": "MDRW2100003410.1.2"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1:  그러게.  오늘 저녁에 뭐 할까?  날씨 좋은데 밖에 나가서 뭐 좀 하고 싶은데.",
+                    "utterance_id": "MDRW2100003410.1.3"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2:  음…  영화 보는 건 어때?  요즘 재밌는 영화 많이 나왔던데.",
+                    "utterance_id": "MDRW2100003410.1.4"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1:  영화도 좋긴 한데, 좀 더 활동적인 게 하고 싶어.",
+                    "utterance_id": "MDRW2100003410.1.5"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2:  그럼 뭐가 좋을까?",
+                    "utterance_id": "MDRW2100003410.1.6"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1:  카페 가서 커피 마시면서 수다 떨거나,  산책하는 건 어때?",
+                    "utterance_id": "MDRW2100003410.1.7"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2:  좋네!  근데 카페는 너무 흔한 것 같고,  산책은 좀 심심할 것 같아.",
+                    "utterance_id": "MDRW2100003410.1.8"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1:  그럼 뭐가 좋지?",
+                    "utterance_id": "MDRW2100003410.1.9"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2:  아!  요즘 핫하다는 그 플리마켓 가는 건 어때?  예쁜 소품도 많고,  먹거리도 많다고 하던데.",
+                    "utterance_id": "MDRW2100003410.1.10"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1:  오, 그거 좋네!  플리마켓 가서 구경도 하고 맛있는 것도 먹고.",
+                    "utterance_id": "MDRW2100003410.1.11"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2:  그래, 그럼 오늘 저녁에 플리마켓 가자!",
+                    "utterance_id": "MDRW2100003410.1.12"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1:  좋아!  근데 어디 플리마켓이 좋을까?",
+                    "utterance_id": "MDRW2100003410.1.13"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2:  내가 괜찮은 곳 알아볼게.  조금만 기다려 봐.",
+                    "utterance_id": "MDRW2100003410.1.14"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1:  오케이!  빨리 알아봐 줘.",
+                    "utterance_id": "MDRW2100003410.1.15"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2:  알았어!",
+                    "utterance_id": "MDRW2100003410.1.16"
+                }
+            ],
+            "reference_id": [
+                "MDRW2100003410.1.11"
+            ],
+            "category": "후행 사건(subsequent event)",
+            "inference_1": "화자1과 화자2는 플리마켓에서 예쁜 소품을 구경할 것이다.",
+            "inference_2": "화자1과 화자2는 플리마켓에서 맛있는 음식을 먹을 것이다.",
+            "inference_3": "화자1과 화자2는 플리마켓에서 각자 원하는 물건을 구매할 것이다. \n"
+        },
+        "output": "inference_2",
+        "output_answer": " '화자1과 화자2가 플리마켓에 가서 예쁜 소품도 많고 먹거리도 많다고 언급했기 때문입니다.' \n"
+    },
+    {
+        "id": "nikluge-2024-대화 맥락 추론-train-000010",
+        "input": {
+            "conversation": [
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 오늘 날씨 진짜 좋다! 햇살도 따스하고 바람도 시원하고~",
+                    "utterance_id": "MDRW2100003410.1.1"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 맞아. 봄바람 살랑살랑 부는 게 기분 좋아.",
+                    "utterance_id": "MDRW2100003410.1.2"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 봄이니까 뭔가 설레는 기분이야.",
+                    "utterance_id": "MDRW2100003410.1.3"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 나도! 봄맞이 여행 계획 세우고 있는데, 혹시 좋은 곳 없을까?",
+                    "utterance_id": "MDRW2100003410.1.4"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 여행? 난 봄에는 꽃 구경 가는 게 좋더라.",
+                    "utterance_id": "MDRW2100003410.1.5"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 꽃 구경? 어디로 가는 게 좋을까?",
+                    "utterance_id": "MDRW2100003410.1.6"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 벚꽃 축제는 벌써 끝났고… 유채꽃 축제는 아직 시작 안 했나?",
+                    "utterance_id": "MDRW2100003410.1.7"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 유채꽃 축제는 4월 중순쯤에 시작한다고 들었어.",
+                    "utterance_id": "MDRW2100003410.1.8"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 그럼 4월 중순쯤에 유채꽃 축제 가는 건 어때?",
+                    "utterance_id": "MDRW2100003410.1.9"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 좋아! 유채꽃밭에서 사진도 많이 찍고!",
+                    "utterance_id": "MDRW2100003410.1.10"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 응! 사진 찍으면 꼭 보여줘!",
+                    "utterance_id": "MDRW2100003410.1.11"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 당연하지!",
+                    "utterance_id": "MDRW2100003410.1.12"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 그럼 유채꽃 축제 가기 전에 맛있는 거 먹으면서 계획 세우자!",
+                    "utterance_id": "MDRW2100003410.1.13"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 좋아! 어디서 먹을까?",
+                    "utterance_id": "MDRW2100003410.1.14"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 뭐 먹고 싶어?",
+                    "utterance_id": "MDRW2100003410.1.15"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 난 봄에는 파스타가 땡기는데, 너는?",
+                    "utterance_id": "MDRW2100003410.1.16"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 파스타도 좋지만, 난 봄에는 뭔가 싱싱한 게 땡겨.",
+                    "utterance_id": "MDRW2100003410.1.17"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 아, 그렇구나. 그럼 샐러드는 어때?",
+                    "utterance_id": "MDRW2100003410.1.18"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 샐러드도 좋네!",
+                    "utterance_id": "MDRW2100003410.1.19"
+                },
+                {
+                    "speaker": 2,
+                    "utterance": "speaker2: 그럼 샐러드 먹으면서 여행 계획 세우자!",
+                    "utterance_id": "MDRW2100003410.1.20"
+                },
+                {
+                    "speaker": 1,
+                    "utterance": "speaker1: 좋아! 빨리 퇴근하고 싶다!",
+                    "utterance_id": "MDRW2100003410.1.21"
+                }
+            ],
+            "reference_id": [
+                "MDRW2100003410.1.11"
+            ],
+            "category": "내적 동기(motivation)",
+            "inference_1": "화자1이 봄맞이 여행 계획을 세우고 있는 것은 화자1이 봄에 대한 설렘을 느끼기 때문이다.",
+            "inference_2": "화자1이 봄맞이 여행 계획을 세우고 있는 것은 화자1이 여행을 좋아하기 때문이다.",
+            "inference_3": "화자1이 봄맞이 여행 계획을 세우고 있는 것은 화자1이 새로운 것을 경험하고 싶어하기 때문이다. \n"
+        },
+        "output": "inference_1",
+        "output_answer": " '화자1은 \"봄이니까 뭔가 설레는 기분이야\"라고 말하며 봄에 대한 설렘을 표현하고"
+    }
+]
