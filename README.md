@@ -125,6 +125,15 @@ bash base_train.sh
 bash base_inference.sh
 ```
 
+### How to Generate Datasets with Gemini-1.5-flash
+- .env 파일 생성 및 gemini api key 입력
+```
+GOOGLE_API_KEY = ""
+```
+```bash
+cd resource \ python gemini-data-maker.py
+```
+
 ## Experiments
 추가 예정
 
